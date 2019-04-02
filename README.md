@@ -14,3 +14,6 @@ This Shiny application allows the user to explore a data file outputted from the
 # Acknowledgements
 - Indiana University - Purdue University of Indianapolis (IUPUI)
      - Department of Earth Sciences
+
+# How to Cite LaserPlot
+- LaserPlot (2019). Retrieved from http://apps.earthsciences.iupui.edu:3838/LaserPlot/
