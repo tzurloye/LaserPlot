@@ -24,7 +24,6 @@ output$LasHeatTimeIn <- renderUI({
                # min = min(data$Time),
                max = data$Time[length(which(data$Laser == "On"))],
                step = 0.1)
-  
 })
 
 
@@ -34,8 +33,6 @@ pullInfo <- reactive({
   
   tryCatch(
     {
-      # browser()
-      # **** This part of the catch is not showing the right time, but is showing the intended format ****
       # Currently not showing the time as a variable
       file <- data.frame(read_excel(inFile$datapath, col_names = FALSE))
       foo <- list()
@@ -45,11 +42,9 @@ pullInfo <- reactive({
       foo$gasBRatio <- as.numeric(file[81,2])
       foo$gasFlowRate <- as.numeric(file[78,2])
       foo$dateTime <- format(as.POSIXct(as.Date(as.numeric(file[121,1]), origin = "1899-12-31"), digits = 10), "%m/%d/%Y")
-      # foo$dateTime <- format(as.POSIXct(as.Date(as.numeric(file[121,1])+as.numeric(file[121,2]), origin = "1899-12-30"), digits = 10), "%m/%d/%Y %H:%M")
       return(foo)
     },
     error = function(cond){
-      # **** This part of the catch is showing military time not AM/PM ****
       # Currently not showing the time as a variable
       file <- data.frame(read_tsv(inFile$datapath, col_names = FALSE))
       foo <- list()
@@ -58,7 +53,6 @@ pullInfo <- reactive({
       foo$gasB <- as.character(file[105,2])
       foo$gasBRatio <- as.numeric(file[81,2])
       foo$gasFlowRate <- as.numeric(file[78,2])
-      # foo$dateTime <- paste(file[121,1], file[121,2], sep=" ")
       foo$dateTime <- (file[121,1])
       return(foo)
       }
@@ -143,7 +137,7 @@ LasCoolReg <- reactive({
 })
 
 # This block of code runs a linear regression where the laser power is on and the temperature
-# is less than 2000 (or a different user input) and returns the regression model
+# is less than the max laser "On" time (or a different user input) and returns the regression model
 LasHeatReg <- reactive({
   data2 <- subset(LasMain$PlotData, LasMain$PlotData$Laser == "On")
   req(input$LasHeatRateTime)
@@ -154,8 +148,6 @@ LasHeatReg <- reactive({
   } else {
     NULL
   }
-  # fit2 <- lm(data = data2, Temp~Time)
-  # fit2
 })
 
 # This block of code calculates the derivative over the heating range and then
@@ -257,9 +249,6 @@ LasPlotTemp <- reactive({
   
   # Base plot
   LasT <- ggplot(data = data, aes(x = Time, y = Temp, color = Laser)) +
-    # geom_segment(x = input$LasHeatRateTime, xend = input$LasHeatRateTime,
-    #              y = min(data$Temp)+400, yend = max(data$Temp),
-    #              linetype = 'dotted') +
     geom_line(size = input$TempPlotThickness) +
     scale_color_manual(name = "Laser Power", values=cols, labels = c("On", "Off"))
   
@@ -378,15 +367,12 @@ observeEvent(c(input$LasPlotTempDblClick, input$LasHeatRateTime), {
 
   LasMain$zoomTemp <- list(xmin = min(data$Time), xmax = max(data$Time), 
                            ymin = ymin, ymax = ymax)
-  
 })
 
 # This block of code resets the zoom to null on a power plot dblclick
 observeEvent(input$LasPlotPowerDblClick, {
-  # browser()
   data <- LasMain$PlotData
   LasMain$zoomPower <- list(xmin = min(data$Time), xmax = max(data$Time), ymin = min(data$Power), ymax = max(data$Power))
-  
 })
 ############################################################
 
