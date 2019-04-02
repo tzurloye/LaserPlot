@@ -19,4 +19,4 @@ This Shiny application allows the user to explore a data file outputted from the
 - LaserPlot (2019). Retrieved from http://apps.earthsciences.iupui.edu:3838/LaserPlot/
 
 # License
-Licensed under the [GNU General Public License v3.0](https://github.com/tzurloye/LaserPlot/blob/master/LICENSE)
+- Licensed under the [GNU General Public License v3.0](https://github.com/tzurloye/LaserPlot/blob/master/LICENSE)
