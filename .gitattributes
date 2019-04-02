@@ -2,4 +2,4 @@
 * text=auto
 
 * linguist-vendored
-*.js linguist-vendored=false
+*.R linguist-vendored=false
