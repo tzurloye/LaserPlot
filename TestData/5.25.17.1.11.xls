@@ -1,97 +1,97 @@
-Ignore LoS	False								
-Ignore LF	False								
-Cool Mode Select	False								
-Man(T) Auto(F) Heat	False								
-Scroll Wheel Inverted	True								
-Set Var Perm	True								
-LF Reset	False								
-Gas B Max Flow Select	False								
-About	False								
-Ratio Lock	False								
-Start w/ Manual Control	True								
-Skip Auto Heat Phase	False								
-Skip Auto Hold Phase	True								
-Skip Auto Cool Phase	True								
-Auto Manual	True								
-PID Tuning	False								
-Hold Indefinitely	False								
-Auto-Logging Off	False								
-Stopwatch Button	False								
-Web1	False								
-Web2	False								
-Web3	False								
-Web4	False								
-Web5	False								
-Web6	False								
-Set Campaign Folder Button	False								
-Density Enable	False								
-Web Interface On/Off	False								
-Density Button	False								
-Manual Pull	False								
-No Dely on File Select	True								
-Write Note	False								
-Pressure Enable/Disable	False								
-Skip cDAQ Values	True								
-Master Pressure Enable	False								
-Dev Version	False								
-Master Purge Gas Enable	False								
-Two Purge Channels	False								
-Two Gas Channels	True								
-Three Gas Channels	True								
-SP1	False								
-SP2	False								
-SP3	False								
-Clear Errors	False								
-Nozzle Spinner On/Off	False								
-Master Nozzle Spinner Enable	False								
-Init Canceled?	False								
-Gas2/3 Help	False								
-Networked Primary MFCs	True								
-Master Density Enable	False								
-Master Web Interface Enable	True								
-Networked Purge MFCs	False								
+Ignore LoS	FALSE								
+Ignore LF	FALSE								
+Cool Mode Select	FALSE								
+Man(T) Auto(F) Heat	FALSE								
+Scroll Wheel Inverted	TRUE								
+Set Var Perm	TRUE								
+LF Reset	FALSE								
+Gas B Max Flow Select	FALSE								
+About	FALSE								
+Ratio Lock	FALSE								
+Start w/ Manual Control	TRUE								
+Skip Auto Heat Phase	FALSE								
+Skip Auto Hold Phase	TRUE								
+Skip Auto Cool Phase	TRUE								
+Auto Manual	TRUE								
+PID Tuning	FALSE								
+Hold Indefinitely	FALSE								
+Auto-Logging Off	FALSE								
+Stopwatch Button	FALSE								
+Web1	FALSE								
+Web2	FALSE								
+Web3	FALSE								
+Web4	FALSE								
+Web5	FALSE								
+Web6	FALSE								
+Set Campaign Folder Button	FALSE								
+Density Enable	FALSE								
+Web Interface On/Off	FALSE								
+Density Button	FALSE								
+Manual Pull	FALSE								
+No Dely on File Select	TRUE								
+Write Note	FALSE								
+Pressure Enable/Disable	FALSE								
+Skip cDAQ Values	TRUE								
+Master Pressure Enable	FALSE								
+Dev Version	FALSE								
+Master Purge Gas Enable	FALSE								
+Two Purge Channels	FALSE								
+Two Gas Channels	TRUE								
+Three Gas Channels	TRUE								
+SP1	FALSE								
+SP2	FALSE								
+SP3	FALSE								
+Clear Errors	FALSE								
+Nozzle Spinner On/Off	FALSE								
+Master Nozzle Spinner Enable	FALSE								
+Init Canceled?	FALSE								
+Gas2/3 Help	FALSE								
+Networked Primary MFCs	TRUE								
+Master Density Enable	FALSE								
+Master Web Interface Enable	TRUE								
+Networked Purge MFCs	FALSE								
 Cool PID.P gain	0.000001								
-Cool PID.I time	0.002000								
-Cool PID.D time	0.000000								
+Cool PID.I time	0.002								
+Cool PID.D time	0								
 Heat PID.P gain	0.000001								
-Heat PID.I time	0.005000								
-Heat PID.D time	0.000000								
+Heat PID.I time	0.005								
+Heat PID.D time	0								
 Hold PID.P gain	0.000001								
-Hold PID.I time	0.050000								
-Hold PID.D time	0.000000								
+Hold PID.I time	0.05								
+Hold PID.D time	0								
 Loss of Sample Config.# Aves	100								
-Loss of Sample Config.Temp Lag (s)	1.500000								
+Loss of Sample Config.Temp Lag (s)	1.5								
 Loss of Sample Config.Loop mSec Time	0								
-Loss of Sample Config.Temp Rate Threshold	20.000000								
-Loss of Sample Config.Cmd Rate Threshold	0.100000								
-Laser Fault Config.Min Cmd	0.100000								
-Laser Fault Config.Min Temp	650.000000								
-Laser Fault Config.LF Time Limit	3.500000								
-TCOR.Wavelength	0.900000								
-TCOR.Window	0.850000								
-TCOR.Emissivity	0.920000								
-Heat Rate	100.000000								
-Cool Rate	100.000000								
-Heat Temp	1600.000000								
-Cool Temp	430.000000								
-Hold Temp	3460.000000								
-Gas Control	375.000000								
-Laser Output	0.000000								
-Max Laser Power%	20.000000								
-Gas Ratio	85.000000								
-Target Ratio	0.000000								
-Total Time (s)	25.000000								
-Gas Channel 1 Max Flow	2000.000000								
-Gas Channel 2 Max Flow	2000.000000								
-Gas Channel 3 Max Flow	50.000000								
-Gas B Max Flow	2000.000000								
-Max Gas Flow	1000.000000								
-Starting Sample Mass (mg)	0.000000								
-Pics to Take	1.000000								
-Pics to Que	1.000000								
-Set Point (Torr)	700.000000								
-Laser Scroll Sensitivity	20.000000								
-Laser Min Temp Offset	50.000000								
+Loss of Sample Config.Temp Rate Threshold	20								
+Loss of Sample Config.Cmd Rate Threshold	0.1								
+Laser Fault Config.Min Cmd	0.1								
+Laser Fault Config.Min Temp	650								
+Laser Fault Config.LF Time Limit	3.5								
+TCOR.Wavelength	0.9								
+TCOR.Window	0.85								
+TCOR.Emissivity	0.92								
+Heat Rate	100								
+Cool Rate	100								
+Heat Temp	1600								
+Cool Temp	430								
+Hold Temp	3460								
+Gas Control	375								
+Laser Output	0								
+Max Laser Power%	20								
+Gas Ratio	85								
+Target Ratio	0								
+Total Time (s)	25								
+Gas Channel 1 Max Flow	2000								
+Gas Channel 2 Max Flow	2000								
+Gas Channel 3 Max Flow	50								
+Gas B Max Flow	2000								
+Max Gas Flow	1000								
+Starting Sample Mass (mg)	0								
+Pics to Take	1								
+Pics to Que	1								
+Set Point (Torr)	700								
+Laser Scroll Sensitivity	20								
+Laser Min Temp Offset	50								
 Admin Control Tabs	PID								
 Tab Control 3	PID								
 StartUpTab	Running								
@@ -113,9 +113,9 @@ MFC Address 4	192.168.50.54
 MFC Address 5	192.168.50.55								
 Network cDAQ String	cDAQ1								
 About Text Version	Version 2.2.3								
-About Text Onsite	Dr. Catherine Macris - camacris@iupui.edu								
-About Text Offsite 1	Rick Weber - President - rweber@matsdev.com								
-About Text Offsite 2	Anthony Tamalonis - Senior R&D Technologist - ajt@matsdev.com								
+About Text Onsite									
+About Text Offsite 1									
+About Text Offsite 2									
 Time To Hold	5								
 Pyrometer 	600-3000								
 5/26/2017	4:37 PM								
